@@ -64,7 +64,6 @@ class Handler extends ExceptionHandler
             );
             }
 
-
              if ($exception instanceof NotFoundHttpException) {
             
             return response()->json([
@@ -75,7 +74,6 @@ class Handler extends ExceptionHandler
             );
             }
         }
-
         
         // dd($exception);
         return parent::render($request, $exception);
